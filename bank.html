@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <!-- Tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/fb52f658a1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="bg-green-400 w-9/12 p-10 mx-auto">
+
+            <h1 class="text-center text-7xl font-semibold text-white mt-6 ">Let's Get Some Mooooney </h1>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-2 text-white ">
+                <div class="bg-lime-600 p-8">
+                    <h4 class="text-2xl font-semibold">Deposit</h4>
+                    <h2 class="text-5xl mt-2">$<span id="deposit-total" >00</span> </h2>
+                </div>
+                <div class="bg-rose-500 p-8">
+                    <h4 class="text-2xl font-semibold">Withdraw</h4>
+                    <h2  class="text-5xl mt-2">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-emerald-600 p-8">
+                    <h4 class="text-2xl font-semibold">Balance</h4>
+                    <h2 class="text-5xl mt-2">$<SPan id="balance-total">1240</SPan></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit and withdraw section -->
+        <section>
+            <!-- deposit -->
+            <div class="grid grid-cols-2  gap-4 w-9/12 mx-auto mt-12  ">
+                <div class="bg-indigo-300 p-8 rounded-lg">
+                    <h4 class="text-2xl font-semibold text-white">Please Deposit</h4>
+                    <input class="w-7/12 block mt-4 px-3" type="text" id="deposit-field"
+                        placeholder="$ Amount you want to Deposit">
+
+                    <button id="btn-deposit"
+                        class="bg-indigo-700 text-white block mt-2 py-2 px-4 rounded-lg font-semibold hover:bg-amber-600">
+                        Diposit</button>
+                </div>
+                <!-- Withdraw -->
+                <div class="bg-fuchsia-500 p-8 rounded-lg">
+                    <h4 class="text-2xl font-semibold text-white">Please Withdraw</h4>
+                    <input id="withdraw-field" class="w-7/12 block mt-4 px-3" type="text" 
+                        placeholder="$ Amount you want to Withdraw">
+
+                    <button id="btn-Withdraw"
+                        class="bg-indigo-700 text-white block mt-2 py-2 px-4 rounded-lg font-semibold hover:bg-amber-600">
+                        Withdraw</button>
+                </div>
+                </div>
+
+        </section>
+    </main>
+<!-- JS -->
+<script src="js/deposit.js"></script>
+<script src="js/withdraw.js"></script>
+</body>
+
+</html>
